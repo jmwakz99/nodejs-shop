@@ -1,0 +1,103 @@
+/* GENERAL STYLES */
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+   
+}
+.navbar, .jumbotron, .products, .footer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARD STYLES */
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 60px;
+
+    cursor: pointer;
+
+  }
+  
+  .products-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .products-container:hover .middle {
+    opacity: 1;
+   
+  }
+  
+
+
+/* NAVBAR STYLES */
+
+/* WHEN THE LINK IS ACTIVE APPLY THESE COLORS */
+.active {
+    color: #79b47c!important;
+}
+
+
+
+/* JUMBOTRON STYLES */
+.jumbotron {
+    background-image: url("../images/jumbotron-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fruit-fresh {
+    color: #79b47c!important;
+}
+.free-pickup-and-delivery {
+    opacity: 0.6;
+}
+.shop-now {
+    background-color: #79b47c!important;
+    border: 0;
+    border-radius: 0;
+}
+
+
+/* PRODUCT SECTION STYLES */
+.products {
+    text-align: center;
+
+}
+
+.products-heading {
+    font-size: 25px;
+}
+.products-heading {
+    font-size:30px;
+    display:inline-block;
+    height:50px;
+    font-weight: bold;
+    box-shadow: 0 25px 0 -23px #79b47c;;
+ 
+}
+.product-name {
+    opacity: .9;
+}
+.product-price {
+    font-weight: bold;
+}
