@@ -15,6 +15,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(adminRoutes)
 
+// This route handles pages not found in the app
+app.use((req, res, next) => {
+    res.render('404', {
+        pageTitle: 'Page Not Found!',
+        path: '/404'
+    })
+})
+
 
 
 app.listen(3000)

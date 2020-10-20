@@ -5,8 +5,12 @@
     font-family: 'Mukta', sans-serif;
    
 }
+
+
+
+
 .navbar, .jumbotron, .products, .footer {
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,3 +105,22 @@
 .product-price {
     font-weight: bold;
 }
+
+
+/* 404 STYLES */
+.page-not-found-main {
+  
+ padding-bottom: 400px;
+ padding-top: 100px;
+ text-align: center;
+}
+
+/* FOOTER STYLES */
+footer {
+    
+  
+  
+}
+
+
+

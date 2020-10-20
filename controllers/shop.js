@@ -6,3 +6,13 @@ exports.shopPage = (req, res, next) => {
     })
 
 }
+
+
+exports.cartPage = (req, res, next) => {
+    res.render('cart', {
+        pageTitle: 'Your Cart',
+        path: "/cart"
+
+    })
+
+}
