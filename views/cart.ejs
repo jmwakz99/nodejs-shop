@@ -3,7 +3,7 @@
 
 <%- include('includes/navbar.ejs') %>
 
-<div class="pb-5 pt-5 mt-5">
+<div class="pb-5 pt-5 mt-5 main-container">
     <table class="table container">
         <thead>
             <tr>
@@ -11,29 +11,131 @@
                 <th scope="col">Price</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Total</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row">
+                <td scope="row align-middle">
                     <div class="row">
                         <div class="col-12">
-                            <img src="images/cabbage-product.jpg" class="img-fluid" width="100px" height="100px" />
-                            <span class="pl-2">One of three columns</span>
+                            <img src="images/cabbage-product.jpg" class="img-fluid" width="50px" height="50px" />
+                            <span class="pl-2">Cabbage</span>
                         </div>
+                    </div>
 
 
-                </th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                </td>
+                <td class="font-weight-bold align-middle">
+                    <div class="row">
+                        <div class="col-12">
+                            $30
+                        </div>
+                    </div>
+
+                </td>
+                <td class="align-middle ">
+                    <div class="row monitor-quantity">
+                        <div class="col-2">
+                            <span class="subtract">-</span>
+                        </div>
+                        <div class="col-2">
+                            <span class=" quantity">2</span>
+                        </div>
+                        <div class=" col-2">
+                            <span class="add">+</span>
+                        </div>
+                    </div>
+                </td>
+                <td class="align-middle">
+                    <div class="row">
+                        <div class="col-12 font-weight-bold">
+                            $30
+                        </div>
+                    </div>
+                </td>
+                <td class="align-middle">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <span class="remove">X</span>
+                        </div>
+                    </div>
+                </td>
             </tr>
+
 
         </tbody>
     </table>
+    <div class="mt-5 pt-5 container">
+        <div class="d-flex flex-sm-column flex-md-row flex-lg-row flex-xl-row justify-content-between">
+            <div class="p-2">
+                <a href="/" type="button" class="btn btn-light">CONTINUE SHOPPING</a>
+
+            </div>
+            <div class="p-2">
+                <button type="submit" class="btn btn-light">UPDATE CART</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-end pb-5  pr-1 pt-5 mr-1 mt-5 mb-5">
+            <div class="card p-3  bg-light" style="width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold pb-3">Cart Total</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">Subtotal</h6>
+
+
+
+                        <h6 class="font-weight-bold text-danger">$400</h6>
+
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between pb-3">
+                        <h6 class="font-weight-bold">Total</h6>
+
+
+
+                        <h6 class="font-weight-bold text-danger">$400</h6>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="btn text-center w-100 make-order">MAKE
+                                ORDER</button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="pb-5">
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
 
 </div>
-
 
 <%- include('includes/footer.ejs') %>
 
