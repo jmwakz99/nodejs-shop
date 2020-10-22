@@ -151,6 +151,14 @@ color: white;
 font-weight: bold;
 }
 
+
+/* ORDERS PAGE STYLES */
+.main-container {
+    min-height: 80vh;
+    font-size: 20px;
+}
+
+
 /* 404 STYLES */
 .page-not-found-main {
   

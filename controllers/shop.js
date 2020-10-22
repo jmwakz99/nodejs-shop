@@ -16,3 +16,13 @@ exports.cartPage = (req, res, next) => {
     })
 
 }
+
+
+exports.orderPage = (req, res, next) => {
+    res.render('orders', {
+        pageTitle: 'Your Orders',
+        path: "/orders"
+
+    })
+
+}
